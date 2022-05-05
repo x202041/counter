@@ -18,7 +18,7 @@
         <input type="button" onclick="a(1000)" value="+1000">
         <input type="button" onclick="b(1000)" value="-1000">
         </div>
-    <input type="button" onclick="c()" value="reset">
+    <div><input type="button" onclick="c()" value="reset"><input type="button" onclick="d()" value="値を表示"></div>
   <script type="text/javascript">
     function a(a1){
       x=x+a1;
@@ -32,6 +32,9 @@
         x=0;
         alert(x);
     }
+      function d(){
+          alert(x);
+      }
   </script>
 
 
