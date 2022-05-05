@@ -10,18 +10,23 @@
   <script>
     var x=0;
   </script>
+    <div>
   <input type="button" onClick="a()" value="+1"/>
   <input type="button" onClick="b()" value="-1"/>
+        </div>
+    <input type="button" onClick="c()" value="reset" />
   <script type="text/javascript">
     function a(){
       x++;
       alert(x);
     }
-  </script>
-  <script type="text/javascript">
     function b(){
       x--;
       alert(x);
+    }
+    function c(){
+        x=0;
+        alert(x);
     }
   </script>
 </body>
