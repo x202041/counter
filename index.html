@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html><head>
     <title>カウンター</title>
     <meta charset="utf-8">
 </head>
@@ -11,10 +9,12 @@
     var x=0;
   </script>
     <div>
-  <input type="button" onClick="a()" value="+1"/>
-  <input type="button" onClick="b()" value="-1"/>
+  <input type="button" onclick="a()" value="+1">
+  <input type="button" onclick="b()" value="-1">
+  <input type="button" onclick="d()" value="+20">
+        <input type="button" onclick="e()" value="-20">
         </div>
-    <input type="button" onClick="c()" value="reset" />
+    <input type="button" onclick="c()" value="reset">
   <script type="text/javascript">
     function a(){
       x++;
@@ -28,7 +28,16 @@
         x=0;
         alert(x);
     }
+      function d(){
+          x=x+20;
+          alert(x);
+      }
+      function e(){
+          x=x-20;
+          alert(x);
+      }
   </script>
-</body>
 
-</html>
+
+
+</body></html>
